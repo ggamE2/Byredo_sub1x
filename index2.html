@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+    <link rel="stylesheet" href="maincss/media.css">
+    <link rel="stylesheet" href="common/css/common-media.css">
+
+    <script src="mainjs/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&Display&family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <script type="text/javascript" src="mainjs/bestbook_zone.js"></script> <!-- 제이쿼리 라이이브러리 연동 -->
+    <script type="text/javascript" src="mainjs/jquery.bxslider.min.js"></script> <!-- bxSlider 플러그인 연동 -->
+
+
+    <script src="mainjs/main.js"></script>
+    <script src="common/js/common.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<style>
+.cont1 .c2 .circles li:first-child img {border:none;}   
+.cont1 .c2 .circles li:first-child img:hover {border:solid 1px #000;}  
+.cont1 .c2 .circles li:nth-child(2) img {border:solid 1px #000;}
+</style>
+<body>
+
+    <header class="header">
+
+        <div class="header_menu_mt">
+            <h1><a href="index.html"><img src="images/logo.png" alt="logo_pc"></a></h1>
+
+            <p class="ic_menu"><img src="images/menu_icon.png" alt="ic_menu"></p>
+            <p class="search"><a href="#"><img src="images/search2.png" alt="search"></a></p>
+
+            <div class="search_box">
+                <div class="search_in">
+                    <input type="text" placeholder="search" class="search_txt">
+                    <!--<input type="button" value="search" class="search_btn">-->
+                    <p class="close_btn"><a>x</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="header_menu_pc">
+            <div class="header_menu">
+                <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="#">Perfume<span class="circle"></span></a>
+                            <ul class="sub1 subm">
+                                <li><a href="#">Discover</a>
+                                    <ul>
+                                        <li><a href="#">Best sellers</a></li>
+                                        <li><a href="#">New arrivals</a></li>
+                                        <li><a href="#">Gift card</a></li>
+                                        <li><a href="#">Mister Marvelous</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Categories</a>
+                                    <ul>
+                                        <li><a href="#">Shop all</a></li>
+                                        <li><a href="#">Perfumes</a></li>
+                                        <li><a href="#">Discovert set</a></li>
+                                        <li><a href="#">Travel editions</a></li>
+                                        <li><a href="#">Perfume extracts</a></li>
+                                        <li><a href="#">Hair perfumes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Best sellers</a>
+                                    <ul>
+                                        <li><a href="#">Bal d'Afrique</a></li>
+                                        <li><a href="#">Majave Ghost</a></li>
+                                        <li><a href="#">Gypsy Water</a></li>
+                                        <li><a href="#">Rose of No Man's Land</a></li>
+                                        <li><a href="#">Blanche</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/sub_1.png"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Makeup<span class="circle"></span></a>
+                            <ul class="sub2 subm">
+                                <li><a href="#">Discover</a>
+                                    <ul>
+                                        <li><a href="#">Best sellers</a></li>
+                                        <li><a href="#">New arrivals</a></li>
+                                        <li><a href="#">Gift card</a></li>
+                                        <li><a href="#">Mister Marvelous</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Categories</a>
+                                    <ul>
+                                        <li><a href="#">Shop all</a></li>
+                                        <li><a href="#">Eyes</a></li>
+                                        <li><a href="#">Lips</a></li>
+                                        <li><a href="#">Face</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Product<span class="circle"></span></a>
+                                    <ul>
+                                        <li><a href="#">Mascara</a></li>
+                                        <li><a href="#">Eyeliner</a></li>
+                                        <li><a href="#">Eyeshadow</a></li>
+                                        <li><a href="#">Lipstick</a></li>
+                                        <li><a href="#">Lip Balm</a></li>
+                                        <li><a href="#">Colour Stick</a></li>
+                                        <li><a href="#">Pencil</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/sub_2a.png"></a>
+                                </li>
+                                <li><a href="#"><img src="images/sub_2b.png"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Home fragrance<span class="circle"></span></a>
+                            <ul class="sub3 subm">
+                                <li><a href="#">Discover</a>
+                                    <ul>
+                                        <li><a href="#">Best sellers</a></li>
+                                        <li><a href="#">New arrivals</a></li>
+                                        <li><a href="#">Gift card</a></li>
+                                        <li><a href="#">Mister Marvelous</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Categories</a>
+                                    <ul>
+                                        <li><a href="#">shop all</a></li>
+                                        <li><a href="#">candies</a></li>
+                                        <li><a href="#">home fragrances</a></li>
+                                        <li><a href="#">Textile perfume</a></li>
+                                        <li><a href="#">Bentgablenits</a></li>
+                                        <li><a href="#">Accessories</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/sub_3a.png"></a>
+                                </li>
+                                <li><a href="#"><img src="images/sub_3b.png"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Hand &amp; body care<span class="circle"></span></a>
+                            <ul class="sub4 subm">
+                                <li><a href="#">Discover</a>
+                                    <ul>
+                                        <li><a href="#">Best sellers</a></li>
+                                        <li><a href="#">New arrivals</a></li>
+                                        <li><a href="#">Gift card</a></li>
+                                        <li><a href="#">Mister Marvelous</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Categories</a>
+                                    <ul>
+                                        <li><a href="#">shop all</a></li>
+                                        <li><a href="#">Hand care</a></li>
+                                        <li><a href="#">Body care</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/sub_4a.png"></a>
+                                    <ul>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/sub_4b.png"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Byproduct<span class="circle"></span></a>
+                            <ul class="subm sub5">
+                                <li><a href="#">Discover</a>
+                                    <ul>
+                                        <li><a href="#">Best sellers</a></li>
+                                        <li><a href="#">New arrivals</a></li>
+                                        <li><a href="#">Gift card</a></li>
+                                        <li><a href="#">Mister Marvelous</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Categories</a>
+                                    <ul>
+                                        <li><a href="#">Latest drop</a></li>
+                                        <li><a href="#">Eyewear</a></li>
+                                        <li><a href="#">small leather goods</a></li>
+                                        <li><a href="#">Footwear</a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Byproduct</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Product<span class="circle"></span></a>
+                                    <ul>
+                                        <li><a href="#">BYPRODCUT 37 - The Slash</a></li>
+                                        <li><a href="#">BYPRODUCT 36 - Infraluna</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img src="images/sub_5a.png"></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--gnb-->
+                    <ul class="gnb2">
+                        <li class="user"><a href="#"><img src="images/user.png"></a></li>
+                        <li class="search"><a href="#"><img src="images/search.png"></a></li>
+                    </ul>
+                </nav>
+                <!--nav-->
+            </div>
+            <!--head_menu-->
+        </div>
+        <!-------header_menu_pc-------->
+        
+
+        <div class="gnb_back"></div>
+
+
+        <div class="search_box">
+            <div class="search_in">
+                <input type="text" placeholder="Search" class="search_txt">
+                <p class="close_btn"><a>x</a></p>
+            </div>
+        </div>
+        <!--search_box-->
+        <div class="user_box">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!----------------------------header--------------------------->
+    
+    
+
+    
+
+    <div class="left_menu">
+        <ul class="gnb3">
+            <li><a href="#">Perfume</a>
+                <ul class="sub1 subm">
+                    <li><a href="#">Discover</a>
+                        <ul>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">New arrivals</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Mister Marvelous</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">Shop all</a></li>
+                            <li><a href="#">Perfumes</a></li>
+                            <li><a href="#">Discovert set</a></li>
+                            <li><a href="#">Travel editions</a></li>
+                            <li><a href="#">Perfume extracts</a></li>
+                            <li><a href="#">Hair perfumes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Best sellers</a>
+                        <ul>
+                            <li><a href="#">Bal d'Afrique</a></li>
+                            <li><a href="#">Majave Ghost</a></li>
+                            <li><a href="#">Gypsy Water</a></li>
+                            <li><a href="#">Rose of No Man's Land</a></li>
+                            <li><a href="#">Blanche</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sub_1.png"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Makeup</a>
+                <ul class="sub2 subm">
+                    <li><a href="#">Discover</a>
+                        <ul>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">New arrivals</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Mister Marvelous</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">Shop all</a></li>
+                            <li><a href="#">Eyes</a></li>
+                            <li><a href="#">Lips</a></li>
+                            <li><a href="#">Face</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Product</a>
+                        <ul>
+                            <li><a href="#">Mascara</a></li>
+                            <li><a href="#">Eyeliner</a></li>
+                            <li><a href="#">Eyeshadow</a></li>
+                            <li><a href="#">Lipstick</a></li>
+                            <li><a href="#">Lip Balm</a></li>
+                            <li><a href="#">Colour Stick</a></li>
+                            <li><a href="#">Pencil</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sub_2a.png"></a>
+                    </li>
+                    <li><a href="#"><img src="images/sub_2b.png"></a></li>
+                </ul>
+            </li>
+            <li><a href="#">Home fragrance</a>
+                <ul class="sub3 subm">
+                    <li><a href="#">Discover</a>
+                        <ul>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">New arrivals</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Mister Marvelous</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">shop all</a></li>
+                            <li><a href="#">candies</a></li>
+                            <li><a href="#">home fragrances</a></li>
+                            <li><a href="#">Textile perfume</a></li>
+                            <li><a href="#">Bentgablenits</a></li>
+                            <li><a href="#">Accessories</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sub_3a.png"></a>
+                    </li>
+                    <li><a href="#"><img src="images/sub_3b.png"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Hand &amp; body care</a>
+                <ul class="sub4 subm">
+                    <li><a href="#">Discover</a>
+                        <ul>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">New arrivals</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Mister Marvelous</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">shop all</a></li>
+                            <li><a href="#">Hand care</a></li>
+                            <li><a href="#">Body care</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sub_4a.png"></a>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sub_4b.png"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Byproduct</a>
+                <ul class="subm sub5">
+                    <li><a href="#">Discover</a>
+                        <ul>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">New arrivals</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">Mister Marvelous</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">Latest drop</a></li>
+                            <li><a href="#">Eyewear</a></li>
+                            <li><a href="#">small leather goods</a></li>
+                            <li><a href="#">Footwear</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Byproduct</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Product</a>
+                        <ul>
+                            <li><a href="#">BYPRODCUT 37 - The Slash</a></li>
+                            <li><a href="#">BYPRODUCT 36 - Infraluna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/sub_5a.png"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!--gnb-->
+        <p class="user"><img src="images/user.png"></p>
+        <p class="close">X</p>
+        <p class="logo_s"><img src="images/logo_s.png"></p>
+
+    </div>
+    <!-----------------left_menu------------------>
+
+
+
+    <div class="contents">
+        <section class="cont1">
+
+
+            <div class="c1">
+                <ul>
+                    <li><img src="images/s2_1.jpg"></li>
+                    <li><img src="images/s2_2.jpg"></li>
+                    <li>
+                        <ul>
+                            <li><img src="images/s2_3.jpg"></li>
+                            <li><img src="images/s2_4.jpg"></li>
+                            <li><img src="images/s2_5.jpg"></li>
+                        </ul>
+                    </li>
+                    <li><img src="images/7.png"></li>
+                </ul>
+            </div>
+
+            <div class="c1_m">
+                <ul>
+                    <li><img src="images/s2_1.jpg"></li>
+                    <li><img src="images/s2_2.jpg"></li>
+                    <li><img src="images/s2_3.jpg"></li>
+                    <li><img src="images/s2_4.jpg"></li>
+                    <li><img src="images/s2_5.jpg"></li>
+                    <li><img src="images/7.png"></li>
+                </ul>
+
+                <p class="prev_btn4">
+                    <a href="#">
+                        <img src="images/left_btn.png" alt="이전으로 이동" />
+                    </a>
+                </p>
+                <p class="next_btn4">
+                    <a href="#">
+                        <img src="images/right_btn.png" alt="다음으로 이동" />
+                    </a>
+                </p>
+            </div>
+
+
+            <div class="c2">
+                <p class="location"><a href="#">Byredo</a> > <a href="#">Makeup</a> > <a href="#">Eyeshadow 5 colours</a></p>
+                <h2>Eyeshadow 5 Colours<br> <span>&#8361;60,000</span> </h2>
+
+                <h3>SCIOMANCER</h3>
+                <ul class="circles">
+                    <li><a href="index.html"><img src="images/color_01.png"></a></li>
+                    <li><a href="index2.html"><img src="images/color_02.png"></a></li>
+                    <li><a href="#"><img src="images/color_03.png"></a></li>
+                    <li><a href="#"><img src="images/color_04.png"></a></li>
+                    <li><a href="#"><img src="images/color_05.png"></a></li>
+
+                </ul>
+
+
+
+
+                <p class="cart_btn"><a href="#">Add to Bag</a></p>
+
+                <p class="text">
+                    <b>SCIOMANCER</b><br><br>
+
+                    A homage to the musician Yves Tumor. A harmony of deep and dramatically colourful shades with metallic and glitter finishes.<br><br>
+
+                    Lightweight and long-lasting with easy to blend textures. The compact encourages the wearer to apply with the fingertips. Intense, pure and radiant, the colours are housed in a distinctive metal ‘raindrop’ compact. Here, there is a notion of the glamorous cosmetic cases of the past, now made for the future.<br><br>
+
+                    Colours:<br><br>
+
+                    Ginger Hussy: iridescent metallic orange
+                    Electric Love: metallic electric purple
+                    Blue Marionette: vibrant sparkling blue
+                    Karma: metallic deep green
+                    Silver Gutter: top coat, black and sliver glitter<br>
+
+
+                </p>
+                <!--text-->
+
+                <div class="rnb">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Good to know <img src="images/arrow_down.png"></a>
+                                <ul>
+                                    <li>-Lightweight</li>
+                                    <li>-Long-lasting</li>
+                                    <li>-Easy to blend</li> 
+                                    <li>-pigment</li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">Ingredients <img src="images/arrow_down.png"></a>
+                                <ul>
+                                    <li>Talc, Mica, Calcium sodium borosilicate, Octyldodecyl stearoyl stearate, Synthetic fluorphlogopite, Dimethicone, Magnesium myristate, Dipentaerythrityl Hexahydroxystearate/Hexastearate/Hexarosinate, Silica, Polyglyceryl-2 triisostearate, Zinc stearate, Ethylhexylglycerin, Dehydroacetic acid, Sorbic acid, Tin oxide, Stearic acid, Palmitic acid, Maltodextrin, Lauric acid.
+
+                                    Please be aware that ingredient lists may change or vary from time to time. To confirm that a BYREDO product is suitable for your personal use, please consult the list of ingredients that is included on the product packaging.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Shipping &amp; handling <img src="images/arrow_down.png"></a>
+                                <ul>
+
+
+                                    <li><input type="text" placeholder="Postal Code."><span class="btn"><a href="#">View Option</a></span></li>
+                                    <li>Europe Standard - Please note that order shipments may take up to 10 business days after dispatch
+                                        Import duties will be fully covered.</li>
+                                </ul>
+                            </li>
+                            <li><a href="">Questions ? <img src="images/arrow_down.png"></a>
+                                <ul>
+                                    <li><a href="">Email customer care</a></li>
+                                    <li><a href="">+44 808 281 2913</a></li>
+                                    <li><a href="">Live chat</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <!--rnb-->
+            </div>
+            <!--c2-->
+
+        </section>
+        <!----cont1---->
+
+        <section class="cont2">
+             <div class="tab_group">
+            <nav class="tab">
+                <ul>
+                  <li class="on">Goes well with</li>
+                  <li class="on2">Recently viewed</li>
+                </ul>
+            </nav>
+            
+            
+            <div class="tab_content on">
+                <ul class="first">
+                   <ul>
+                    <li><a href="#">
+                    <div class="screen">
+                      <h2 class="top">Blanche<br> 30ml hand cream </h2>
+					  <p class="bottom">&#8361;60,000</p>
+                    <img src="images/rec_01.jpg"></div>
+                    </a></li>
+                    
+                     <li><a href="#">
+                    <div class="screen">
+                      <p class="top">Tree House<br>240g candle</p>
+					  <p class="bottom">&#8361;100,800</p>
+                    <img src="images/rec_02.jpg"></div>
+                    </a></li>
+                    
+                     <li><a href="#">
+                    <div class="screen">
+                      <p class="top">Blanche<br>75ml Hair perfume</p>
+					  <p class="bottom">&#8361;92,000</p>
+                    <img src="images/rec_03.jpg"></div>
+                    </a></li>
+                    
+                     <li><a href="#">
+                    <div class="screen">
+                      <p class="top">Veryver<br>Hand wash</p>
+					  <p class="bottom">&#8361;82,000</p>
+                    <img src="images/rec_04.jpg"></div>
+                    </a></li>
+                    
+                    
+                    </ul>
+                    
+                </ul><!--first-->
+            </div><!--tab_content on-->
+            
+            
+            
+            <div class="tab_content on2">
+                <ul class="second">
+                       <ul>
+                        <li><a href="#">
+                    <div class="screen">
+                      <p class="top">Blanche<br>75ml Hair perfume</p>
+					  <p class="bottom">&#8361;92,000</p>
+                    <img src="images/view_01.jpg"></div>
+                    </a></li>
+                    
+                     <li><a href="#">
+                    <div class="screen">
+                      <p class="top">Veryver<br>Hand wash</p>
+					  <p class="bottom">&#8361;82,000</p>
+                    <img src="images/view_02.jpg"></div>
+                    </a></li>  
+                    </ul>
+                </ul>
+                
+            </div>
+              </div><!--tab_group--> 
+        </section>
+        <!---------cont2-------->
+    </div>
+    <!---------------contents-------------------->
+
+
+
+    <section class="moving"></section>
+
+
+
+    <footer class="footer">
+        <div class="foot1">
+            <div>
+                <ul>
+                    <li><select>
+                            <option>
+                                <img src="images/n5.png">United Kingdom
+                            </option>
+                            <option><span><img src="images/n2.png"></span>Austria</option>
+                            <option><img src="images/n2.png">Belgium</option>
+                            <option><img src="images/n3.png">Bulgaria</option>
+                            <option><img src="images/n4.png">Canada</option>
+                            <option><img src="images/n1.png">Italy</option>
+
+                        </select></li>
+
+                    <li><a href="#"><img src="images/user.png">Account</a></li>
+                    <li><b>Customer care</b></li>
+                    <li><a href="#">Email customer care</a></li>
+                    <li><a href="#">+44 808 281 2913</a></li>
+                    <li><a href="#">Live chat</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><b>HELP</b></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Modern slavery</a></li>
+                    <li><a href="#">Cookies settings</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!----foot1---->
+
+
+
+
+        <div class="foot2">
+            <div>
+                <ul>
+                    <li><b>EXCLUSIVE SECVICES</b></li>
+                    <li>-Free shipping</li>
+                    <li>-30 days free returns</li>
+                    <li>-Secure payments</li>
+                    <li>-BYREDO wrapping</li>
+                    <li>-Complimentary samples of your choice</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><b>Store locator</b></li>
+                    <li><a href="#">Find your store</a></li>
+                    <li><a href="#">Stay in the know</a></li>
+                    <li>Receive email updates from Byredo (including launch announcement, product info and exclusive access).</li>
+                    <li><input type="text" placeholder="Email address."><span class="btn"><a href="#">ok</a></span></li>
+                    <li>You can unsubscribe any time by using the link in our emails.
+                        Please see our Privacy Policy for more information about how we handle and use personal information.</li>
+                </ul>
+
+            </div>
+        </div>
+        <!----foot2---->
+
+
+        <ul class="foot3">
+            <li>
+                © Byredo </li>
+            <li><a href="https://www.facebook.com/byredo/"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/officialbyredo/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=MEN4y65dtQ8"><img src="images/utube.png"></a></li>
+        </ul>
+    </footer>
+    <!---------------------footer-------------------->
+
+
+    <footer class="footer_m">
+        <div class="snb">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Customer care <img src="images/arrow_down.png"></a>
+                        <ul>
+                            <li><a href="">Email customer care</a></li>
+                            <li><a href="">+44 808 281 2913</a></li>
+                            <li><a href="">Live chat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">HELP <img src="images/arrow_down.png"></a>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">returns</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Cookie Polic</a></li>
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="">Modern slaver</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">EXCLUSIVE SECVICE <img src="images/arrow_down.png"></a>
+                        <ul>
+                            <li><a href="">Free shipping</a></li>
+                            <li><a href="">30 days free returns</a></li>
+                            <li><a href="">Secure payment</a></li>
+                            <li><a href="">BYREDO wrapping</a></li>
+                            <li><a href="">Complimentary samples of your choice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Store locator <img src="images/arrow_down.png"></a>
+                        <ul>
+                            <li><a href=""> Find your store</a></li>
+                            <li><a href=""> Stay in the know</a></li>
+                            <li><a href=""> Receive email updates from Byredo </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Stay in the know <img src="images/arrow_down.png"></a>
+                        <ul class="loop">
+                            <li><a href="">Receive email updates from Byredo </a></li>
+                            <li><input type="text" placeholder="Email address."><span class="btn"><a href="#">ok</a></span></li>
+                            <li> You can unsubscribe any time by using the link in our emails. Please see our Privacy Policy for more information about how we handle and use personal information.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <ul class="foot3">
+            <li> © Byredo </li>
+            <li><a href="https://www.facebook.com/byredo/"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/officialbyredo/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=MEN4y65dtQ8"><img src="images/utube.png"></a></li>
+        </ul>
+
+    </footer>
+    <!-----------------footer_m----------------------->
+
+</body>
+
+</html>
