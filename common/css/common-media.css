@@ -1,0 +1,63 @@
+
+/* 모바일 */
+ @media screen and (max-width:639px){
+.header_menu_pc,.footer .foot3 .txt4 {display:none;}
+.footer{height:500px;}     
+.footer .foot1 ul{width:80%; height: 90px; margin:0 auto;}     
+.footer{display: none;}  
+     
+     
+/*--footer_m--*/
+.footer_m .foot3 {
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.footer_m .foot3 li:first-child {
+    float: left;
+    margin-left: 3%;
+    font: normal 15px "Share Tech Mono";
+}
+
+.footer_m .foot3 li:nth-child(2) {
+    margin: 0% 5% 0 1%;
+}
+
+.footer_m .foot3 li {
+    float: right;
+}
+
+.footer_m .foot3 li img {
+    width: 20px;
+}
+
+.footer_m .foot3 li img:hover {
+    filter: invert(77%) sepia(13%) saturate(588%) hue-rotate(96deg) brightness(104%) contrast(90%);
+}     
+
+     
+     
+     
+     
+}
+
+/*  태블릿 PC : width 1023px 미만 640px 이상 */
+ @media screen and (min-width:640px) and (max-width:1024px){
+.header_menu_pc{display:none;}
+.footer{height:420px;}     
+.footer .foot1 ul{width:80%; height: 40px; margin:0 auto;}   
+.footer_m{display: none;}  
+
+}
+
+
+/* pc */
+@media all and (min-width:1024px){
+.header_menu_mt{display:none;}
+.footer{height:400px;}
+.footer_m{display: none;}    
+
+}

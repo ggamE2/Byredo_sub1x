@@ -1,0 +1,768 @@
+@charset "utf-8";
+
+/*base*/
+body,ul,li,ol,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{margin:0;padding:0;}
+body{font:normal 12px "맑은 고딕", Malgun Gothic, serif;}
+ul{list-style: none;}
+img{border:0;vertical-align: top;}
+a{text-decoration: none; color:#000;}
+table{ border-collapse:collapse;}
+
+
+#wrap{width:100%;overflow: hidden;}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 50px;
+    background: #fbfbfb;
+}
+
+.header_menu {
+    position: relative;
+    height: 50px;
+    margin: 0 auto;
+    width: 1400px;
+
+}
+
+.header_menu:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.header_menu h1 {
+    float: left;
+}
+
+.header_menu h1 img {
+    width: 130px;
+    padding-top: 10px;
+}
+
+.nav {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.nav:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.gnb {
+    float: right;
+    height: 50px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+
+.gnb > li {
+    position: static;
+    float: left;
+    padding-right: 70px;
+    height: 30px;
+    /*높이 x0*/
+}
+
+.gnb > li > a:hover {
+    color: #a2d9bc;
+}
+
+.gnb > li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 320px;
+    background: #fbfbfb;
+    width: 100%;
+    display: none;
+}
+
+
+.gnb > li:nth-child(1):hover:before {display: block;}
+.gnb > li:nth-child(2):hover:before {display: block;}
+.gnb > li:nth-child(3):hover:before {display: block;}
+.gnb > li:nth-child(4):hover:before {display: block;}
+.gnb > li:nth-child(5):hover:before {display: block;}
+
+
+
+.gnb > li:last-child {
+    padding-right: 0px;
+}
+
+.gnb > li > a {
+    color: #000;
+    font: normal 14px "Share Tech Mono";
+}
+
+
+
+/*subm*/
+.gnb > li > ul {
+    position: absolute;
+    top: 40px;
+    width: 1270px;
+    height: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gnb > li > ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.gnb > li > ul > li {
+    float: left;
+    width: 200px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    margin-right: 13px;
+}
+
+.gnb > li > ul > li > a {
+    margin-bottom: 12px;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.gnb > li > ul > li > ul > li {
+    margin-bottom: 12px;
+}
+
+/*소메뉴 아래 간격*/
+
+.gnb > li > ul > li > ul > li a {
+    font: normal 14px "Share Tech Mono";
+    color: #717171;
+    transition: all 0.4s linear 0s;
+}
+
+.gnb > li > ul > li > ul > li:hover a {
+    font: normal 14px "Share Tech Mono";
+    color: #000;
+}
+
+.gnb > li > ul > li:last-child {
+    margin-right: 0;
+}
+
+.gnb > li > ul > li img:hover {
+    opacity: 0.8;
+}
+
+
+.gnb > li:nth-of-type(1) > ul {display: none;}
+.gnb > li:nth-of-type(2) > ul {display: none;}
+.gnb > li:nth-of-type(3) > ul {display: none;}
+.gnb > li:nth-of-type(4) > ul {display: none;}
+.gnb > li:nth-of-type(5) > ul {display: none;}
+
+.gnb > li:hover > ul {display: block;}
+
+
+
+
+/*------gnb2 헤더 오른쪽 버튼------*/
+.gnb2 {
+    position: absolute;
+    right: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.gnb2 li {
+    float: left;
+    padding-top: 10px;
+}
+
+.gnb2 li img {
+    width: 23px;
+}
+
+.gnb2 li img:hover {
+    filter: invert(77%) sepia(13%) saturate(588%) hue-rotate(96deg) brightness(104%) contrast(90%);
+}
+
+.gnb2 li:first-child {
+    margin-right: 20px;
+}
+
+.gnb2 .user {}
+
+.gnb2 .search_bar()
+
+
+
+
+
+
+/*-------header_menu_mt--------*/
+.header_menu_mt {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background: #fbfbfb;
+}
+
+.header_menu_mt h1 {
+    text-align: center;
+}
+
+.header_menu_mt h1 img {
+    width: 130px;
+    padding-top: 10px;
+}
+
+.header_menu_mt .ic_menu {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+.header_menu_mt .ic_menu img {
+    width: 35px;
+}
+
+.header_menu_mt .search {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.header_menu_mt .search img {
+    width: 30px;
+}
+
+
+
+
+/*-----------search & user btn-------------*/
+.search_box {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    border: none;
+    top: 50px;
+}
+
+.search_in {
+    margin: 0 auto;
+    width: 95%;
+    height: 40px;
+}
+
+.search_in .search_txt {
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+
+.search_in .close_btn {
+    float: right;
+    width: 5%;
+    color: #646464;
+    font: normal 50px "Gowun Dodum";
+    height: 45px;
+    cursor: pointer;
+}
+
+.search_in .close_btn a {
+    color: #646464;
+    display: block;
+    line-height: 35px;
+}
+
+
+.user_box {
+    display: none;
+    position: absolute;
+    right: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 200px;
+}
+
+.user_box ul {
+    background: #fbfbfb;
+}
+
+.user_box ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+}
+
+.user_box ul li a {
+    font: normal 15px "Gowun Dodum";
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+}
+
+.user_box ul li a:hover {
+    background: #d2d2d2;
+}
+
+
+
+
+
+/*--------left_menu---------*/
+
+.left_menu {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background: #fbfbfb;
+    z-index: 300;
+    padding-top: 80px;
+}
+
+.gnb3 {
+    line-height: 2
+}
+
+.gnb3 > li {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    line-height: 2.5;
+}
+
+.gnb3 > li:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.gnb3 > li > a {
+    color: #7c7c7c;
+    font: normal 14px "Share Tech Mono";
+    line-height: 45px;
+    display: block;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.gnb3 > li:hover > a {
+    background: rgba(0, 0, 0, 0.8);
+    color: #a2d9bc;
+}
+
+.gnb3 ul {
+    display: none;
+}
+
+.gnb3 ul li {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.gnb3 ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.gnb3 ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.gnb3 ul li img {
+    display: none;
+}
+
+
+/*--left_menu_btn--*/
+.left_logo {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    text-align: center;
+}
+
+.left_logo img {
+    width: 50px;
+}
+
+.left_menu .close {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.left_menu .user img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 23px;
+}
+
+.left_menu .user img:hover {
+    filter: invert(77%) sepia(13%) saturate(588%) hue-rotate(96deg) brightness(104%) contrast(90%);
+}
+
+.left_menu .logo_s {
+    position: absolute;
+    width: 100%;
+    top: 600px;
+    text-align: center;
+}
+
+.left_menu .logo_s img {
+    width: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*---------footer_pc_t----------*/
+
+.footer {
+    position: relative;
+    width: 100%;
+}
+
+.footer > div {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    height: 450px;
+    background: #fbfbfb;
+}
+
+.footer > div > div {
+    float: left;
+    width: 50%;
+}
+
+.footer > div > div ul {
+    margin-top: 30px;
+    position: relative;
+}
+
+
+.footer > div > div ul li:first-child {
+    margin: 45px 0 25px;
+    font: normal 15px "Share Tech Mono";
+}
+
+.footer > div > div ul li {
+    font: normal 14px "Share Tech Mono";
+    line-height: 2;
+}
+
+.footer > div > div ul li a:hover {
+    font-weight: bold;
+}
+
+.footer > div > div ul li img {
+    width: 13px;
+    padding-top: 3px;
+    margin-right: 5px;
+}
+
+.foot1 > div:first-child > ul {
+    margin-left: 20px;
+}
+
+.foot1 > div:first-child > ul li:nth-child(3) {
+    margin: 30px 0 5px;
+}
+
+
+.foot1 > div li select {
+    width: 60%;
+    height: 40px;
+    border: 2px solid #6bbac9;
+    color: #000;
+    font: normal 15px "Gowun Dodum";
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 2;
+}
+
+.foot2 > div:nth-child(2) > ul > li:nth-child(5) {
+    width: 100%;
+    float: left;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.foot2 > div > ul > li:nth-child(5) input {
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.foot2 > div > ul > li:nth-child(5) .btn {
+    float: right;
+    width: 20%;
+    height: 45px;
+    background: #000;
+    text-align: center;
+    margin-right: 3%;
+}
+
+.foot2 > div > ul > li:nth-child(5) .btn a {
+    display: block;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    font: normal 18px "Share Tech Mono";
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10%;
+}
+
+
+.footer .foot3 {
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.footer .foot3 li:first-child {
+    float: left;
+    margin-left: 3%;
+    font: normal 15px "Share Tech Mono";
+}
+
+.footer .foot3 li:nth-child(2) {
+    margin: 0% 1% 0 1%;
+}
+
+.footer .foot3 li:nth-child(3){
+    margin: 0% 1% 0 2%;
+}
+
+
+
+.footer .foot3 li {
+    float: right;
+}
+
+.footer .foot3 li img {
+    width: 20px;
+}
+
+.footer .foot3 li img:hover {
+    filter: invert(77%) sepia(13%) saturate(588%) hue-rotate(96deg) brightness(104%) contrast(90%);
+}
+
+
+
+
+/*----------------footer_m-------------*/
+.footer_m {
+    width: 100%;
+}
+
+.snb {
+    width: 100%;
+}
+
+.snb h2 {
+    font-size: 23px;
+    color: #000;
+    line-height: 60px;
+}
+
+.snb nav > ul {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.snb nav > ul > li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.snb nav > ul > li img {
+    float: right;
+    width: 25px;
+    padding-top: 15px;
+    margin-right: 20px;
+    opacity: 0.4;
+}
+
+.snb nav > ul > li > a {
+    display: block;
+    padding: 0 0 0 20px;
+    line-height: 56px;
+    font-size: 17px;
+    color: #000;
+    transition: background-color .5s;
+}
+
+
+.snb nav > ul > li > ul {
+    display: none;
+    padding: 15px 0 13px;
+    border-top: 1px solid #ddd;
+    background: #f3f2f3;
+}
+
+.snb nav > ul > li > ul a {
+    display: block;
+    position: relative;
+    padding: 0 0 0 34px;
+    line-height: 31px;
+    font-size: 13px;
+    color: #000;
+}
+
+.snb nav > ul > li > ul > li a:hover {
+    font-weight: bold;
+}
+
+.snb nav > ul > li.on > a.dep {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+/*.snb nav > ul > li:first-child---dont't work */
+.snb nav > ul > li:first-child >ul li:first-child a::before {
+        content:"";
+        background: url(../images/email.png) no-repeat 0px 6px; 
+        background-size:18px 18px;
+        width:20px;
+        height:23px;
+        display:inline-block;
+        margin-right: 3px;
+}
+.snb nav > ul > li:first-child >ul li:nth-child(2) a::before {
+        content:"";
+        background: url(../images/call01.png) no-repeat 0px 6px; 
+        background-size:18px 18px;
+        width:20px;
+        height:24px;
+        display:inline-block;
+        margin-right: 3px;
+}
+.snb nav > ul > li:first-child >ul li:nth-child(3) a::before {
+        content:"";
+        background: url(../images/chat01.png) no-repeat 0px 9px; 
+        background-size:17px 17px;
+        width:20px;
+        height:25px;
+        display:inline-block;
+        margin-right: 3px;
+}
+
+
+
+
+/*.snb nav > ul > li > .loop > li:nth-child(2)*/
+.snb nav > ul > li > .loop > li:nth-child(2) {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.snb nav > ul > li > .loop > li input {
+    width: 65%;
+    margin-left: 5%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.snb nav > ul > li > .loop > li .btn {
+    float: right;
+    width: 20%;
+    height: 45px;
+    background: #000;
+    margin-right: 5%;
+}
+
+.snb nav > ul > li > .loop > li .btn a {
+    width: 20%;
+    display: block;
+    font: normal 18px "Share Tech Mono";
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+
+.snb nav > ul > li > .loop > li .btn:hover {
+    opacity: 0.6;
+}
+
+.snb nav > ul > li > .loop > li:nth-child(3) {
+    width: 90%;
+    margin: 0 auto;
+}
+
+     
+/*--footer_m--*/
+.footer_m .foot3 {
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.footer_m .foot3 li:first-child {
+    float: left;
+    margin-left: 3%;
+    font: normal 15px "Share Tech Mono";
+}
+
+.footer_m .foot3 li:nth-child(2) {
+    margin: 0% 1% 0 1%;
+}
+.footer_m .foot3 li:nth-child(3){
+    margin: 0% 1% 0 2%;
+}
+
+.footer_m .foot3 li {
+    float: right;
+}
+
+.footer_m .foot3 li img {
+    width: 20px;
+}
+
+.footer_m .foot3 li img:hover {
+    filter: invert(77%) sepia(13%) saturate(588%) hue-rotate(96deg) brightness(104%) contrast(90%);
+}     
+
+
