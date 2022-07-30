@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+
+/*-----------------------contents------------------------*/
+.contents{
+    position: relative; 
+    width: 100%;
+    margin: 49px auto 0;
+    overflow: hidden;
+}
+
+
+
+
+/*-------------cont1-------------*/
+.cont1{width: 100%;  position: relative; overflow: hidden;}
+.cont1>div{float:left; position: relative; width: 50%;}
+.cont1>div:first-child{ position: relative; width: 50%; overflow:auto; white-space: nowrap;
+-ms-overflow-style: none;
+}
+.cont1>div:first-child::-webkit-scrollbar{
+  display:none; 
+}
+
+.cont1{border:1px solid gray;width:100%;height:100%;
+	margin:0 auto 40px;overflow:hidden;
+}
+
+
+
+.c1_m{margin:0 auto;
+	width:100%;height:100%;
+	position:relative;
+}
+.c1_m ul img{width:100%;}
+.c1_m span, .c1_m span strong{
+	display:block;text-align:center;
+}
+.c1_m span strong{
+	color:#88332e;font-weight:bold;
+}
+.c1_m span{
+	padding-top:18px;
+}
+.c1_m .prev_btn4{
+	position:absolute;top:245px;left:5px; opacity: 0.6;
+}
+.c1_m .next_btn4{
+	position:absolute;top:245px;right:5px; opacity: 0.6;
+}
+
+
+
+.cont1>div:first-child li{position: relative; width:100%; }
+.cont1>div:first-child ul>li>ul{width:100%; overflow:hidden; }
+.cont1>div:first-child ul>li>ul>li{float: left; width:33.3333333%;}
+.cont1>div:first-child li img{width: 100%;}
+
+
+
+
+/*----------.cont1_c2-----------*/
+.cont1 .c2 .location{float: right; margin-right:20px; margin-top: 60px; font: normal 15px "Share Tech Mono";}
+.cont1 .c2 .location a:hover{opacity: 0.7;}
+.cont1 .c2 h2{margin-top:350px; padding-left: 5%;   font: bold 35px "Bebas Neue";}
+.cont1 .c2 h2 span{font:normal 20px "Bebas Neue";}
+.cont1 .c2 h3{ margin-top:20px;  padding-left: 5%; font:normal 20px "Bebas Neue";} 
+
+
+
+.cont1 .c2 .circles{width: 90%; overflow: hidden; margin: 10px auto 0; }
+.cont1 .c2 .circles li{width: 12%;  margin-right: 2%; float: left;}
+.cont1 .c2 .circles li:last-child{margin-right: 32%; }
+.cont1 .c2 .circles li img {width: 100%;  border-radius: 50%; }
+.cont1 .c2 .circles li:first-child img {border:solid 1px #000;}
+.cont1 .c2 .circles li img:hover{border:solid 1px #000;}
+
+
+.cont1 .c2 .cart_btn{width: 100%; height: 60px; margin-top:30px;}
+.cont1 .c2 .cart_btn a{width: 100%; height: 60px; text-align: center; line-height: 60px; display: block; box-sizing: border-box; color:#fff; background: #000; }
+.cont1 .c2 .cart_btn a:hover{opacity: 0.8;}
+
+
+.cont1 .c2 .text{width: 90%; overflow: hidden;  margin: 30px auto 0; }
+
+
+/*-----------cont1_c2_rnb------------*/
+.cont1 > div .rnb {
+    width: 100%;
+}
+
+.cont1 .c2 .rnb h2 {
+    font-size: 23px;
+    color: #000;
+    line-height: 60px;
+}
+
+.cont1 .c2 .rnb nav > ul {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.cont1 .c2 .rnb nav > ul > li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.cont1 .c2 .rnb nav > ul > li img {
+    float: right;
+    width: 25px;
+    padding-top: 15px;
+    margin-right: 20px;
+    opacity: 0.4;
+}
+
+.cont1 .c2 .rnb nav > ul > li > a {
+    display: block;
+    padding: 0 0 0 20px;
+    line-height: 56px;
+    font-size: 17px;
+    color: #000;
+    transition: background-color .5s;
+}
+
+
+.cont1 .c2 .rnb nav > ul > li > ul {
+    display: none;
+    padding: 15px 0 13px;
+    border-top: 1px solid #ddd;
+    background: #f3f2f3;
+}
+
+.cont1 .c2 .rnb nav > ul > li > ul a {
+    display: block;
+    position: relative;
+    padding: 0 0 0 34px;
+    line-height: 31px;
+    font-size: 13px;
+    color: #000;
+}
+
+
+.cont1 .c2 .rnb nav > ul > li.on > a.dep {
+    color: #fff;
+    background: #a6a6a6;
+}
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul{
+    width: 100%; 
+    overflow: auto;
+}
+
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li {
+    width: 20%;
+    font-size: 13px;
+    line-height: 1.5;
+    padding-left: 20%;
+    float: left;
+}
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li :nth-child(2n){
+    width: 20%;
+    font-size: 13px;
+    line-height: 1.5;
+    padding-right: 20%;
+}
+
+
+/*.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul li span {
+    float: right;
+}*/
+
+
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(2) > ul li {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li input {
+    width: 55%;
+    height: 40px;
+}
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li .btn {
+    float: right;
+    width: 42%;
+    height: 45px;
+    background: #000;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li .btn a {
+    width: 90%;
+    display: block;
+    box-sizing: border-box;
+    font: normal 15px "Share Tech Mono";
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+.cont1 .c2 .rnb nav > ul > li:nth-child(4) >ul li:first-child a::before {
+        content:"";
+        background: url(../images/email.png) no-repeat 0px 6px; 
+        background-size:19px 19px;
+        width:20px;
+        height:23px;
+        display:inline-block;
+        margin-right: 3px;
+}
+.cont1 .c2 .rnb nav > ul > li:nth-child(4) >ul li:nth-child(2) a::before {
+        content:"";
+        background: url(../images/call.png) no-repeat 0px 6px; 
+        background-size:18px 18px;
+        width:20px;
+        height:24px;
+        display:inline-block;
+        margin-right: 3px;
+}
+.cont1 .c2 .rnb nav > ul > li:nth-child(4) >ul li:nth-child(3) a::before {
+        content:"";
+        background: url(../images/chat.png) no-repeat 0px 9px; 
+        background-size:17px 17px;
+        width:20px;
+        height:25px;
+        display:inline-block;
+        margin-right: 3px;
+}
+
+/*-----------------cont2---------------------*/
+.cont2{width: 100%; position: relative; overflow: hidden;}
+.cont2 .tab_group {
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.cont2 .tab {
+    padding: 0 0 14px;
+}
+
+.cont2 .tab ul {
+    display: flex; 
+}
+
+.cont2 .tab ul li {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    font: normal 18px "Share Tech Mono";
+    cursor: pointer;
+}
+.cont2 .tab ul li:hover{opacity: 0.5;}
+
+
+.cont2 .tab ul li.on {
+    z-index: 2;
+}
+
+
+.cont2 .tab_content {
+    display: none;
+    background: #fff;
+    line-height: 212px;
+    text-align: center;
+    font-size: 100px;
+    color: #000;
+}
+
+
+
+/*--.cont2 .tab_content__first--*/
+.cont2 .tab_content.on {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.cont2 .tab_content.on .first{}
+.cont2 .tab_content.on .first ul{position: relative; }
+.cont2 .tab_content.on .first ul li{float:left; margin-top: 20px; width: 25%; }
+.cont2 .tab_content.on .first ul li img{width: 100%;}
+
+
+
+
+.cont2 .tab_content.on .first > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+.cont2 .tab_content.on .first > ul > li > a {
+    display: block;
+    margin: 5px;
+}
+
+.cont2 .tab_content.on .first > ul > li > a .screen {
+    position: relative;
+    overflow: hidden;
+}
+.cont2 .tab_content.on .first > ul > li>a:hover img{filter: brightness(60%); transition:all 0.5s;}
+
+.cont2 .tab_content.on .first > ul > li > a .screen .top {
+    position: absolute;
+    text-align: left;
+    bottom: 150%;
+    left: 20px;
+    z-index: 2;
+    color: #fff;
+    font:bold 20px "Gothic A1";
+    transition: all .35s;
+}
+
+.cont2 .tab_content.on .first > ul > li > a .screen .bottom {
+    position: absolute;
+    top: 150%;
+    left: 20px;
+    z-index: 2;
+    color: #fff;
+    font: normal 12px "Share Tech Mono";/*폰트적용후높이달라짐*/
+    transition: all .35s;
+}
+
+.cont2 .tab_content.on .first > ul > li > a:hover .top {
+    bottom: 30%;
+}
+
+.cont2 .tab_content.on .first > ul > li > a:hover .bottom {
+    top: 80%;
+}
+
+
+
+
+
+/*---.cont2 .tab_content__seconnd--*/
+.cont2 .tab_content.on2 {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.cont2 .tab_content.on2 .second{}
+.cont2 .tab_content.on2 .second ul{position: relative; }
+.cont2 .tab_content.on2 .second ul li{ width: 25%; float:left; margin-top: 20px; }
+.cont2 .tab_content.on2 .second ul li img{width: 100%;}
+
+.cont2 .tab_content.on2 .second > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a {
+    display: block;
+    margin: 5px;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a .screen {
+    position: relative;
+    overflow: hidden;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a .screen .top {
+    position: absolute;
+    text-align: left;
+    bottom: 150%;
+    left: 20px;
+    z-index: 2;
+    color: #fff;
+    font:bold 20px "Gothic A1";
+    transition: all .35s;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a .screen .bottom {
+    position: absolute;
+    top: 150%;
+    left: 20px;
+    z-index: 2;
+    color: #fff;
+    font: normal 12px "Share Tech Mono";/*폰트적용후높이달라짐*/
+    transition: all .35s;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a .screen img {
+    width: 100%;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a h3 {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.cont2 .tab_content.on2 .second > ul > li>a:hover img{filter: brightness(60%); transition:all 0.5s;}
+
+.cont2 .tab_content.on2 .second > ul > li > a:hover .top {
+    bottom: 30%;
+}
+
+.cont2 .tab_content.on2 .second > ul > li > a:hover .bottom {
+    top: 80%;
+}
+
+
+
+
+
+
+.moving {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: url(../images/moving.png) 1500px center / 1750px repeat-x;
+    animation: movebg 40s linear infinite;
+}
+
+@keyframes movebg{
+        0%{background-position: 0 center;}
+        100%{background-position: -3000px center;}/*속도*/
+    }    
