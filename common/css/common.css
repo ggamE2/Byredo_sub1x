@@ -410,10 +410,20 @@ table{ border-collapse:collapse;}
 .left_menu .close {
     position: absolute;
     top: 8px;
-    right: 18px;
+    right: 15px;
     color: #000;
     font-size: 25px;
     cursor: pointer;
+}
+
+.left_menu .close img {
+    position: relative;
+    width: 38px;
+}
+
+.left_menu .close img:hover {
+    transform: rotate(90deg);
+    transition: all 0.5s;
 }
 
 .left_menu .user img {
