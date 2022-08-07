@@ -178,20 +178,19 @@
     margin: 0 auto;
     overflow: auto;
 }
-
 .cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li {
     width: 80%;
     margin: 0 auto;
 }
 
 .cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li input {
-    width: 55%;
+    width: 50%;
     height: 40px;
 }
 
 .cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li .btn {
     float: right;
-    width: 42%;
+    width: 40%;
     height: 45px;
     background: #000;
     text-align: center;
