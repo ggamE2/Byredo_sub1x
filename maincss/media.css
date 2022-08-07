@@ -1,7 +1,8 @@
 
 /* 모바일 */
  @media screen and (max-width:639px){
-.c1{display: none;}     
+.c1{display: none;}  
+  
 /*cont1_c1*/    
 .cont1>div{width: 100%; } 
 .cont1>div:first-child{width: 100%; overflow: hidden;} 
@@ -12,10 +13,7 @@
 .cont1 .c2 h2{margin-top: 150px; }     
 
 .cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li {width: 30%;padding-left:13%;}    
-.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li :nth-child(2n){
-    width: 30%;
-    padding-right: 13%;
-}
+.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li :nth-child(2n){ width: 30%; padding-right: 13%;}
   
 .cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li .btn a {font: normal 14px "Share Tech Mono"; height: 45px; line-height: 45px; width: 80%;}
 
@@ -34,7 +32,9 @@
 .cont2 .tab_content.on .second > ul > li > a .screen .top {font:bold 16px "Gothic A1"; bottom: 100%;}
 .cont2 .tab_content.on .second > ul > li > a:hover .top { bottom: 50%;}
 .cont2 .tab_content.on .second > ul > li > a:hover .bottom { top: 65%;} 
-     
+
+  
+  
 
 }
 
