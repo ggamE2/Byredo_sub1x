@@ -11,7 +11,12 @@
 .cont1 .c2 .location{margin-top: 30px;}
 .cont1 .c2 h2{margin-top: 150px; }     
 
-.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li {width: 30%;padding-left:15%;}          
+.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li {width: 30%;padding-left:15%;}    
+.cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li :nth-child(2n){
+    width: 30%;
+    padding-right: 15%;
+}
+  
 .cont1 .c2 .rnb nav > ul > li:nth-child(3) > ul li .btn a {font: normal 14px "Share Tech Mono"; height: 45px; line-height: 45px; width: 80%;}
 
      
