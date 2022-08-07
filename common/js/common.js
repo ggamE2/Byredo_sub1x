@@ -1,6 +1,5 @@
-
 $(function(){
-//menu
+//men
 $(".gnb>li").on("mouseover focus", function(){
  $(this).find(".sub").slideDown(300);     
 });
