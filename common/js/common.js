@@ -66,7 +66,7 @@ $(document).ready(function(){
   });
 
   snb.on('click', function(){
-      $(this).parent().addClass('on').children('ul').stop().slideDown(400);
+      $(this).parent().addClass('on').children('ul').slideToggle(400);  
       $(this).parent().siblings('li').removeClass('on').children('ul').stop().slideUp(200);
       return false;
   });
