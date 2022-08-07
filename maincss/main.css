@@ -152,8 +152,9 @@
 
 
 .cont1 .c2 .rnb nav > ul > li:nth-child(1) > ul>li {
+    position: relative;
     width: 20%;
-    display:block;
+    height: 20px;
     font-size: 13px;
     line-height: 1.5;
     padding-left: 20%;
